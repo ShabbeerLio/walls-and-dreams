@@ -1,0 +1,183 @@
+.HAbout {
+  padding: 8rem 0rem;
+  /* background: black; */
+  width: 100%;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.HAbout-main {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.HAbout span {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  border: 120px solid rgba(255, 255, 255, 0.04);
+  display: inline-block;
+  position: absolute;
+  bottom: -260px;
+  left: -130px;
+  z-index: -1;
+  animation-delay: 1s;
+  animation-duration: 1s;
+}
+
+.HAbout-box {
+  display: flex;
+  gap: 2rem;
+}
+
+.HAbout-box-left {
+  width: 40%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.HAbout-left-card img {
+  width: 90%;
+}
+
+.HAbout-left-title {
+  position: absolute;
+  top: 8%;
+  left: 33%;
+}
+.HAbout-left-title h2 {
+  font-weight: 600;
+  font-size: 140px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: black;
+}
+.HAbout-left-title p {
+  width: 50%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: white;
+}
+
+.HAbout-box-right {
+  width: 60%;
+  color: white;
+}
+
+.HAbout-box-right h6 {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  margin-bottom: 15px;
+  display: inline-block;
+  animation-delay: 0.2s;
+  animation-duration: 1s;
+}
+
+.HAbout-box-right h2 {
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 13px;
+  animation-delay: 0.4s;
+  animation-duration: 1s;
+}
+.HAbout-box-right h5 {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 34px;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  padding-bottom: 5px;
+  animation-delay: 0.6s;
+  animation-duration: 1s;
+}
+.HAbout-box-right p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  color: #a7a7ad;
+  margin-bottom: 40px;
+  animation-delay: 0.7s;
+  animation-duration: 1s;
+}
+
+.HAbout-right-btun p a {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #ff5746;
+  position: relative;
+  animation-delay: 0.9s;
+  animation-duration: 1s;
+  text-decoration: none;
+}
+.HAbout-right-btun p a svg {
+  font-size: 18px;
+  margin-left: 12px;
+}
+
+.HAbout-clients-title h3 {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1;
+  color: white;
+  margin-bottom: 15px;
+}
+.HAbout-clients-title h3 svg {
+  color: greenyellow;
+  font-size: 20px;
+  margin-right: 12px;
+}
+
+.HAbout-clients{
+    margin-top: 5rem;
+}
+
+.HAbout-box-card {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.HAbout-box-clients{
+    height: 90px;
+    line-height: 86px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+    padding: 0px 40px;
+    width: 100%;
+    transition: 0.3s;
+    text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .HAbout-main {
+    max-width: 1140px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+}

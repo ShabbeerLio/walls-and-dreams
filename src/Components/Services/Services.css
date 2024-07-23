@@ -1,0 +1,98 @@
+.Services {
+  padding: 6rem 0rem;
+  /* background: black; */
+  width: 100%;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.Services-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 100vh; */
+  overflow: hidden;
+  /* position: relative; */
+}
+
+.Services-bg .imag {
+  background-image: url("../../Assets/Services/hero-2-overlay.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.Services-main {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.Services span {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  border: 120px solid rgba(255, 255, 255, 0.04);
+  display: inline-block;
+  position: absolute;
+  top: -260px;
+  right: -130px;
+  z-index: -1;
+  animation-delay: 1s;
+  animation-duration: 1s;
+}
+
+.accordion-button {
+  padding: 1rem 0;
+}
+
+.accordion-body {
+  padding: 1rem 0rem;
+  color: #666666;
+  font-size: 18px;
+}
+
+.accordion-flush .accordion-item {
+  background: transparent;
+  color: #bebebe;
+  border-bottom: 1px solid rgb(102, 102, 102) !important;
+}
+
+.accordion-flush .accordion-item .accordion-button {
+  background: transparent;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 40px 0;
+  padding-bottom: 30px;
+  display: flex;
+  align-items: start;
+  width: 100%;
+  position: relative;
+  transition: 0.3s;
+  padding-right: 100px;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: black;
+  outline: 0;
+  box-shadow: none;
+}
+
+@media (min-width: 1200px) {
+  .Services-main {
+    max-width: 1140px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+}
