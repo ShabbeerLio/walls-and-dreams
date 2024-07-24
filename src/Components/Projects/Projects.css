@@ -1,0 +1,151 @@
+.Projects {
+  padding: 8rem 0rem;
+  width: 100%;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.Projects-main {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* slider */
+.Projects .slideStyle {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  transition: 0.25s;
+}
+
+.Projects .swiperParallax {
+  &.swiper {
+    width: 100%;
+    overflow: hidden;
+  }
+  .swiper-wrapper {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+  }
+  .swiper-slide {
+    width: 50vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+    flex-direction: column;
+    flex: none;
+    &.swiper-slide-active {
+      .gallery-img__wrapper {
+        opacity: 1;
+        transform: scale(1);
+      }
+      .gallery-info__wrapper {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+  }
+  .gallery-img__wrapper {
+    position: relative;
+    /* overflow: hidden; */
+    width: 120%;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 66.7%; */
+    border-radius: 0.75rem;
+    opacity: 0.25;
+    transform: scale(0.7);
+    transition: transform 0.6s cubic-bezier(0.77, 0, 0.175, 1),
+      opacity 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+    .gallery-img {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      max-width: none;
+      object-fit: cover;
+      border-radius: 25px;
+      opacity: 2;
+    }
+  }
+  .gallery-info__wrapper {
+    display: flex;
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: transform 0.6s cubic-bezier(0.77, 0, 0.175, 1),
+      opacity 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+    .heading-medium {
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+  }
+}
+
+.Projects-box {
+  position: relative;
+}
+
+.Projects-btn {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+}
+.Projects-btn button {
+  border: none;
+  background-color: transparent;
+}
+
+.Projects-btn .swiper-button-prev {
+  left: -8% !important;
+}
+
+.Projects-btn .swiper-button-next {
+  right: -8% !important;
+}
+
+.Projects-btn .swiper-button-prev,
+.Projects-btn .swiper-button-next {
+  /* top: 95% !important; */
+  z-index: 99999 !important;
+  color: white !important;
+  border: 1px solid white;
+  border-radius: 50px;
+  height: 45px !important;
+  width: 45px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Projects-btn .swiper-button-prev:after,
+.Projects-btn .swiper-button-next:after {
+  font-size: 20px !important;
+  font-weight: 900;
+}
+
+@media (min-width: 1200px) {
+  .Projects-main {
+    max-width: 1140px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+}

@@ -1,0 +1,136 @@
+.Skills {
+  padding: 6rem 0rem;
+  /* background: black; */
+  width: 100%;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.Skills-main {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Skills span {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  border: 120px solid rgba(255, 255, 255, 0.04);
+  display: inline-block;
+  position: absolute;
+  top: -260px;
+  right: -130px;
+  z-index: -1;
+  animation-delay: 1s;
+  animation-duration: 1s;
+}
+
+.Skills-box {
+  padding: 2rem 5rem;
+}
+
+.Skills-card-detail {
+  display: grid;
+  grid-template-columns: repeat(3, 20% 60% 20%);
+  padding: 2rem 0;
+  border-bottom: 1px solid rgb(41, 41, 41);
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  position: relative;
+}
+.Skills-card-detail:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: rgb(155, 155, 155);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.7s ease-out 0s;
+}
+
+.Skills-card-detail:hover:after {
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+.Skills-card-detail p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+  font-size: 15px;
+  margin: 0;
+}
+
+.Skills-card-detail h3 {
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.Skills-card-detail h6 {
+  font-weight: 500;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.skills-box-clients {
+  height: 90px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 100px;
+  padding: 0px 35px;
+  width: 100%;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+.skills-box-clients p {
+  margin: 0;
+}
+.skills-box-clients p svg {
+  font-size: 30px;
+  color: white;
+}
+
+.skills-detail h6 {
+  text-align: start;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+}
+.skills-detail p {
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #ff5746;
+  font-style: normal;
+  display: block;
+}
+
+@media (min-width: 1200px) {
+  .Skills-main {
+    max-width: 1140px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+}

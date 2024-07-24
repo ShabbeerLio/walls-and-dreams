@@ -7,7 +7,7 @@ import { PiStarFourFill } from "react-icons/pi";
 const HAbout = () => {
     return (
         <div className='HAbout'>
-            <span></span>
+            <span className='back-cover-left'></span>
             <div className='HAbout-main'>
                 <div className='HAbout-box'>
                     <div className='HAbout-box-left'>

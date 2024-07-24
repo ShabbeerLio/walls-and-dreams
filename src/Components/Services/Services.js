@@ -8,9 +8,8 @@ const Services = () => {
         <div className='Services'>
             <div className='Services-bg'>
                 <div className="imag"></div>
-                {/* <img src={servicebg} alt="" /> */}
             </div>
-            <span></span>
+            <span className='back-cover-right'></span>
             <div className='Services-main'>
                 <div className='Services-box'>
                     <div className="HAbout-clients-title">
